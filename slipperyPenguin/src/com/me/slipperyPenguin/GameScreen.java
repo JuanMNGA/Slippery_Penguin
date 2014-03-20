@@ -98,7 +98,7 @@ public class GameScreen implements Screen { // Implementa la interfaz de Screen,
 		Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT); // Despues de la funcion anterior es necesario ejecutar esta, para que se lleve a cabo
 		if(inicial){
 			batch.begin();
-			batch.draw(texturaInicio,0,0,texturaInicio.getWidth(),texturaInicio.getHeight());
+			batch.draw(texturaInicio,0,0,Gdx.graphics.getWidth(),Gdx.graphics.getHeight());
 			font.setScale(2f);
 			font.setColor(Color.WHITE);
 			font.draw(batch, "SLIPPERY PENGUIN",8,392);
